@@ -21,4 +21,5 @@ LABEL name="HACBS Contract Golden Container" \
       vcs-type=git \
       architecture=$TARGETARCH \
       com.redhat.component="hacbs-contract-golden-container" \
-      com.redhat.build-host="somewhere.over.the.rainbow"
+      com.redhat.build-host="somewhere.over.the.rainbow" \
+      spam="maps"
