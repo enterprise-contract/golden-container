@@ -13,7 +13,7 @@ env:
 
 jobs:
   build:
-    if: ${{ github.ref == 'refs/heads/main' }}
+    on.push.branches: [main]
     runs-on: ubuntu-latest
 
     permissions:
@@ -78,7 +78,7 @@ jobs:
       actions: read # for detecting the Github Actions environment.
       id-token: write # for creating OIDC tokens for signing.
       packages: write # for uploading attestations.
-    if: ${{ github.ref == 'refs/heads/main' }}
+    on.push.branches: [main]
     uses: slsa-framework/slsa-github-generator/.github/workflows/generator_container_slsa3.yml@v1.7.0
     with:
       image: ${{ needs.build.outputs.image }}
