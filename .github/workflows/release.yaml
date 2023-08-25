@@ -18,7 +18,9 @@ jobs:
 
     permissions:
       # Needed for signing the container image with GitHub OIDC Token
-      write-all
+      id-token: write
+      # Needed to push to ghcr.io registry
+      packages: write
 
     outputs:
       image:  ${{ env.IMAGE_REGISTRY }}/${{ env.IMAGE_REPO }}
