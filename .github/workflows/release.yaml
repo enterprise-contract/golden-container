@@ -1,5 +1,4 @@
----
-name: Build and Push workflow to ghcr.io
+name: Release
 
 on:
   push:
@@ -7,8 +6,8 @@ on:
 
 env:
   IMAGE_REGISTRY: ghcr.io
-  IMAGE_REPO: seanconroy2021/golden-container
-  IMAGE_TAGS: snapshot
+  IMAGE_REPO: enterprise-contract/golden-container
+  IMAGE_TAGS: latest
 
 jobs:
   build:
