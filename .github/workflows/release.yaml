@@ -90,5 +90,5 @@ jobs:
         uses: enterprise-contract/action-validate-image@v1.1
         with:
           image: ${{ env.IMAGE_REGISTRY }}/${{ env.IMAGE_REPO }}:${{ env.DIGEST }}
-          identity: https:\/\/github\.com\/(slsa-framework\/slsa-github-generator|${{ github.actor }}\/${{ github.event.repository.name }})\/
+          identity: https:\/\/github\.com\/(slsa-framework\/slsa-github-generator|${{ github.event.repository.name }}\/${{ github.event.repository.name }})\/
           issuer: https://token.actions.githubusercontent.com
