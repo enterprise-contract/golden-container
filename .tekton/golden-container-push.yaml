@@ -281,7 +281,7 @@ spec:
         - name: name
           value: deprecated-image-check
         - name: bundle
-          value: quay.io/redhat-appstudio-tekton-catalog/task-deprecated-image-check:0.3@sha256:a299ff57d97f3924020634625dfb9bbc66547124ca23a3396e338c645f7b4a8e
+          value: quay.io/redhat-appstudio-tekton-catalog/task-deprecated-image-check:0.3@sha256:d862972471dca80900bbe3a0fbd579cc84e8414bafbd5021bc684b207067c423
         - name: kind
           value: task
         resolver: bundles
