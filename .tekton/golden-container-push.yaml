@@ -301,7 +301,7 @@ spec:
           - name: name
             value: build-image-manifest
           - name: bundle
-            value: quay.io/redhat-appstudio-tekton-catalog/task-build-image-manifest:0.1@sha256:4f8da0144ac88fb8139d3f60c40b64db02a5bf8bdd3f500f22389de80c7807c8
+            value: quay.io/redhat-appstudio-tekton-catalog/task-build-image-manifest:0.1@sha256:e064b63b2311d23d6bf6538347cb4eb18c980d61883f48149bc9c728f76b276c
           - name: kind
             value: task
         resolver: bundles
