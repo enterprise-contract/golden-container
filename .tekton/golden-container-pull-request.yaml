@@ -276,7 +276,7 @@ spec:
         - name: name
           value: buildah-remote
         - name: bundle
-          value: quay.io/redhat-appstudio-tekton-catalog/task-buildah-remote:0.1@sha256:5fe4aedbe5afe86fa39aaa38fd00bedeb9a4ed5b864edf87c3a20f41b983c4af
+          value: quay.io/redhat-appstudio-tekton-catalog/task-buildah-remote:0.1@sha256:15f3395b9de2d88e888451a85f577347173cd904cd19a9bbd0750f57b40764e5
         - name: kind
           value: task
         resolver: bundles
