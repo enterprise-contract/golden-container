@@ -33,7 +33,7 @@ spec:
             - name: revision
           steps:
             - name: tag-with-latest
-              image: registry.access.redhat.com/ubi9/skopeo:latest@sha256:789cfada9b186db8f738e48c79a1646f3b91c3ba0238d2a63dc6fb4f19763673
+              image: registry.access.redhat.com/ubi9/skopeo:latest@sha256:7ea7d4cf96a9a59dc7df43da8b1896306006d3475f4393769b1308ed7e2fea79
               script: |
                 #!/usr/bin/env bash
                 SRC_REF=quay.io/redhat-appstudio/ec-golden-image:$(params.revision)
