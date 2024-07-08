@@ -11,7 +11,6 @@ LABEL name="Enterprise Contract Golden Container" \
       release="1" \
       build-date=$BUILD_DATE \
       summary="Trivial image build in compliance with Enterprise Contract policy" \
-      description="Trivial image build in compliance with Enterprise Contract policy" \
       url="https://github.com/enterprise-contract/golden-container" \
       distribution-scope="public" \
       io.k8s.description="Trivial image build in compliance with Enterprise Contract policy" \
