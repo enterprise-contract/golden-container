@@ -236,7 +236,7 @@ spec:
         - name: name
           value: buildah
         - name: bundle
-          value: quay.io/konflux-ci/tekton-catalog/task-buildah:0.1@sha256:71270c342a02cf661fbe02ce4814f0c5f10e7d59e55ac8f01b9cc8636c904958
+          value: quay.io/konflux-ci/tekton-catalog/task-buildah:0.1@sha256:72e4ddd9b543e2766830e3a513da5c2fec26ea7a72a50e8c85be642912caa603
         - name: kind
           value: task
         resolver: bundles
@@ -273,7 +273,7 @@ spec:
         - name: name
           value: buildah-remote
         - name: bundle
-          value: quay.io/konflux-ci/tekton-catalog/task-buildah-remote:0.1@sha256:d81e85e64eafa38dd11742b9d343143f425f79f581456294f644bf23eb7e3bee
+          value: quay.io/konflux-ci/tekton-catalog/task-buildah-remote:0.1@sha256:6479353351b9e8c0b0b5c6ff48d8848cde011d896ec511c26231163528f99332
         - name: kind
           value: task
         resolver: bundles
