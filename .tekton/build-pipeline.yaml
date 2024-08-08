@@ -205,7 +205,7 @@ spec:
           - name: name
             value: buildah
           - name: bundle
-            value: quay.io/konflux-ci/tekton-catalog/task-buildah:0.2@sha256:67963bcd91b23ee90f2c4ecb8b7f523c457f6c350df17bc192480dbd085a241d
+            value: quay.io/konflux-ci/tekton-catalog/task-buildah:0.2@sha256:2418e94712a0b6798ea3ff031e05d75959f4f42d4566c37f65c3c973b25ce450
           - name: kind
             value: task
         resolver: bundles
@@ -242,7 +242,7 @@ spec:
           - name: name
             value: buildah-remote
           - name: bundle
-            value: quay.io/konflux-ci/tekton-catalog/task-buildah-remote:0.2@sha256:333fc689d32628862fc8372e2f6be39e1ef6687da36534807c1213e54fbbee29
+            value: quay.io/konflux-ci/tekton-catalog/task-buildah-remote:0.2@sha256:70479881a19d3125e83a5a13329df4cce97a62dd39001aba663ef5b95d5e676d
           - name: kind
             value: task
         resolver: bundles
@@ -272,7 +272,7 @@ spec:
           - name: name
             value: build-image-manifest
           - name: bundle
-            value: quay.io/konflux-ci/tekton-catalog/task-build-image-manifest:0.1@sha256:09f84dc4c80fadd1ff06441137bd393f242a2db63a14ff76c4af6002bb882ab8
+            value: quay.io/konflux-ci/tekton-catalog/task-build-image-manifest:0.1@sha256:b4e443b109faa8f5ac935fbcb32ebd936c3dcb289de1cd930786535dc773ff90
           - name: kind
             value: task
         resolver: bundles
