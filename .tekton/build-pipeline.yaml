@@ -261,7 +261,7 @@ spec:
           - name: name
             value: build-image-manifest
           - name: bundle
-            value: quay.io/konflux-ci/tekton-catalog/task-build-image-manifest:0.1@sha256:b0cf7cb6749ac811c01a7c47596e6b8381c98100c4c6050567b02f4e8d7ddcb1
+            value: quay.io/konflux-ci/tekton-catalog/task-build-image-manifest:0.1@sha256:c1c5d9a2451b80c8bb18ccd34c4fa6649f6ee2887fc88844eb6b467313c26e4f
           - name: kind
             value: task
         resolver: bundles
