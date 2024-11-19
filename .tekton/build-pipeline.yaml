@@ -371,7 +371,7 @@ spec:
           - name: name
             value: sast-snyk-check
           - name: bundle
-            value: quay.io/konflux-ci/tekton-catalog/task-sast-snyk-check:0.3@sha256:f165b1ce91b54d477ff3dd2702f6bc9f737309a061b4f3a8e24bf7ab0f548eb0
+            value: quay.io/konflux-ci/tekton-catalog/task-sast-snyk-check:0.3@sha256:9fa8acbd4331e5f7c7ba39c6283a219b084e8b2332996e0988a7907a4a75feb4
           - name: kind
             value: task
         resolver: bundles
