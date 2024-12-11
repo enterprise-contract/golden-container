@@ -423,7 +423,7 @@ spec:
           - name: name
             value: verify-signed-rpms
           - name: bundle
-            value: quay.io/konflux-ci/tekton-catalog/task-verify-signed-rpms:0.1@sha256:6fd79c5fb2c82128ee8903dd3409a1ebb6650566a5d246335a3ba7696a8ce282
+            value: quay.io/konflux-ci/tekton-catalog/task-verify-signed-rpms:0.1@sha256:f20cb69f1bc97daaac31ea6ee5efd0fccbeb5ed5dc3575512478fea74bd16376
           - name: kind
             value: task
         resolver: bundles
