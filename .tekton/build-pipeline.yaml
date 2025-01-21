@@ -281,7 +281,7 @@ spec:
           - name: name
             value: source-build
           - name: bundle
-            value: quay.io/konflux-ci/tekton-catalog/task-source-build:0.1@sha256:5e36a38cc6a595a1869b0093af79a54840f85540b649a0f142c92f6f24baf2b8
+            value: quay.io/konflux-ci/tekton-catalog/task-source-build:0.1@sha256:9d8f146d0474440165db38a3efdf55da73856de332ebf8d598197f92156ee44e
           - name: kind
             value: task
         resolver: bundles
