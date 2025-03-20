@@ -1,4 +1,4 @@
-FROM registry.access.redhat.com/ubi9/ubi-micro:latest@sha256:8a6071b01366611fd9433bf9688f5c3150de819874fa2c06c4fcd4c25ea26f03
+FROM registry.access.redhat.com/ubi9/ubi:latest
 
 ARG GIT_ID
 ARG TARGETARCH
@@ -22,3 +22,8 @@ LABEL name="Enterprise Contract Golden Container" \
       architecture=$TARGETARCH \
       com.redhat.component="enterprise-contract-golden-container" \
       com.redhat.build-host="somewhere.over.the.rainbow"
+
+RUN \
+      [[ "$(uname -a)" == *"x86_64"* ]] && \
+      dnf downgrade -y https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/g/gzip-1.9-13.el8_5.x86_64.rpm \
+      || true
