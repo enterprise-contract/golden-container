@@ -6,8 +6,9 @@ metadata:
     build.appstudio.redhat.com/commit_sha: '{{revision}}'
     build.appstudio.redhat.com/target_branch: '{{target_branch}}'
     pipelinesascode.tekton.dev/max-keep-runs: "3"
-    pipelinesascode.tekton.dev/on-cel-expression: event == "push" && target_branch == "main"
-    pipelinesascode.tekton.dev/pipeline: ".tekton/build-pipeline.yaml"
+    pipelinesascode.tekton.dev/on-cel-expression: event == "push" && target_branch
+      == "main"
+    pipelinesascode.tekton.dev/pipeline: .tekton/build-pipeline.yaml
   creationTimestamp: null
   labels:
     appstudio.openshift.io/application: golden-container
@@ -28,12 +29,13 @@ spec:
   - name: revision
     value: '{{revision}}'
   - name: hermetic
-    value: 'true'
+    value: "true"
   - name: build-source-image
-    value: 'true'
+    value: "true"
   pipelineRef:
     name: build
-  taskRunTemplate: {}
+  taskRunTemplate:
+    serviceAccountName: build-pipeline-golden-container
   workspaces:
   - name: workspace
     volumeClaimTemplate:
