@@ -86,13 +86,6 @@ jobs:
     needs: [provenance, build]
     runs-on: ubuntu-latest
     steps:
-      - name: Log in to ghcr
-        uses: redhat-actions/podman-login@4934294ad0449894bcd1e9f191899d7292469603 # v1
-        with:
-          registry: ${{ env.IMAGE_REGISTRY }}
-          username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
-
       - name: Validate image
         uses: conforma/action-validate-image@v1.0.401
         with:
