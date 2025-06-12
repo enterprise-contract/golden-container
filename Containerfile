@@ -1,4 +1,4 @@
-FROM registry.access.redhat.com/ubi9/ubi-micro:latest@sha256:51c14942422ba283eb45484a96d284298587326cfc2d00335a4cd3eaf7437c66
+FROM registry.access.redhat.com/ubi9/ubi-micro:latest@sha256:9d241cec87d22681d8e4ffe76d98d960b48d967c108cd627a139df670b793186
 
 ARG GIT_ID
 ARG TARGETARCH
